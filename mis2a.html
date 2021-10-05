@@ -5,14 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>張芯榕簡介</title>
 
-<style type="text/css">
-	* {
-		font-family: "標楷體"; }
+	<style type="text/css">
+		* {
+			font-family: "標楷體"; }
 
-	header {
-		font-size: 36px;
-		color: #55ff55;	}
-</style>
+		header {
+			font-size: 36px;
+			color: #55ff55;	}
+	</style>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 </head>
 
@@ -25,7 +28,7 @@
 		</ul>
 	</nav>
 
-	<main>
+	<main class="container-fluid bg-primary text-white text-center">
 
 		<nav>
 			<h1><a href="http://www1.pu.edu.tw/~tcyang">張芯榕(Xin-Rong Zhang)</a></h1>
@@ -36,21 +39,23 @@
 		<img src="pucsim.jpg" alt="照片">
 		<br><br><br>
 
-	 	<session id="aboutme">
-	 		<header>關於我</header>
-	 		<h3>職稱：靜宜大學資訊管理學系學生</h3>
-	 		<h3>E-Mail: <a href="s1090343@gm.pu.edu.tw"></a>s1090343@gm.pu.edu.tw</h3>
-	 	</session>
+		<div class="row">
+		 	<session id="aboutme" class="col-lg-4">
+		 		<header>關於我</header>
+		 		<h3>職稱：靜宜大學資訊管理學系學生</h3>
+		 		<h3>E-Mail: <a href="s1090343@gm.pu.edu.tw"></a>s1090343@gm.pu.edu.tw</h3>
+		 	</session>
 
-	 	<article id="bookmark">
-	 		<header>座右銘</header>
-	 		<h3>願你所有的追尋，都能帶你找到平靜</h3>
-	 	</article>
+		 	<article id="bookmark" class="col-lg-4">
+		 		<header>座右銘</header>
+		 		<h3>願你所有的追尋，都能帶你找到平靜</h3>
+		 	</article>
 
-	 	<aside id="youtube">
-	 		<header>推薦影片</header>
-	 		<iframe src="https://www.youtube.com/embed/=pW88QFpHXa8"></iframe>
-	 	</aside>
+		 	<aside id="youtube" class="col-lg-4">
+		 		<header>推薦影片</header>
+		 		<iframe src="https://www.youtube.com/embed/=pW88QFpHXa8"></iframe>
+		 	</aside>
+		 </div><br><br>
 
 	 	<footer>
 	 		Copyrigth @ 張芯榕. All Rights Reserved.
