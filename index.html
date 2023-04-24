@@ -1,103 +1,99 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>張芯榕簡介</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>張芯榕簡介</title>
 
-	<style type="text/css">
-		* {
-			font-family: "標楷體"; }
+		<style type="text/css">
+			* {
+				font-family: "標楷體"; }
 
-		header {
-			font-size: 36px;
-			color: #55ff55;	}
+			header {
+				font-size: 36px;
+				color: #55ff55;	}
 
-		.col-lg-4 {
-			border: 1px solid;}
-	</style>
+			.col-lg-4 {
+				border: 1px solid;}
+		</style>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-	<script>
-		$(document).ready(function(){
-			$("#PICTURE").click(function(){
-				$("#PICTURE").hide();
-				$("#PICTURE").fadeIn("slow")
+		<script>
+			$(document).ready(function(){
+				$("#PICTURE").click(function(){
+					$("#PICTURE").hide();
+					$("#PICTURE").fadeIn("slow")
+				});
+
+				$("#I").hover(function(){
+					$("#PICTURE").attr("scr","family.jpg");
+				});
+
+				$("#PU").hover(function(){
+					$("#PICTURE").attr("scr","pu.jpg");
+				});
+
+				$("#CSIM").hover(function(){
+					$("#PICTURE").attr("scr","pucsim.jpg");
+				});
 			});
+		</script>
 
-			$("#I").hover(function(){
-				$("#PICTURE").attr("scr","family.jpg");
-			});
+	</head>
 
-			$("#PU").hover(function(){
-				$("#PICTURE").attr("scr","pu.jpg");
-			});
+	<body>
+		<nav class="navbar navbar-expand-md bg-primary navbar-dark">
+			<a class="navbar-brand" href="#">MENU</a>
 
-			$("#CSIM").hover(function(){
-				$("#PICTURE").attr("scr","pucsim.jpg");
-			});
-		});
-	</script>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-</head>
-
-<body>
-	<nav class="navbar navbar-expand-md bg-primary navbar-dark">
-		<a class="navbar-brand" href="#">MENU</a>
-
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link" href="#aboutme">關於我</a></li>
-				<li class="nav-item"><a class="nav-link" href="#bookmark">座右銘</a></li>
-				<li class="nav-item"><a class="nav-link" href="#youtube">推薦影片</a></li>
-			</ul>
-		</div>
-	</nav>
-
-	<main class="container-fluid bg-primary text-white text-center">
-
-		<nav>
-			<h1><a href="http://www1.pu.edu.tw/~tcyang" class="text-reset text-decoration-none text-white bg-primary" target="_blank" id="I">張芯榕(Xin-Rong Zhang)</a></h1>
-			<h2><a href="http://www.pu.edu.tw/" class="text-reset text-decoration-none text-white bg-primary" id="PU">靜宜大學</a>	
-	 		/ <a href="http://csim.pu.edu.tw/" class="text-reset text-decoration-none text-white bg-primary" id="CSIM">資訊管理學系</a></h2>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="#aboutme">關於我</a></li>
+					<li class="nav-item"><a class="nav-link" href="#bookmark">座右銘</a></li>
+					<li class="nav-item"><a class="nav-link" href="#experience">課堂心得</a></li>
+				</ul>
+			</div>
 		</nav>
-		
-		<img src="pucsim.jpg" alt="照片" class="img-fluid rounded-circle" id="PICTURE">
-		<br><br><br>
 
-		<div class="row">
-		 	<session id="aboutme" class="col-lg-4">
-		 		<header>關於我</header>
-		 		<h3>職稱：靜宜大學資訊管理學系學生</h3>
-		 		<h3>E-Mail: <a href="s1090343@gm.pu.edu.tw" class="text-reset text-decoration-none text-white bg-info">s1090343@gm.pu.edu.tw</a></h3>
-		 	</session>
+		<main class="container-fluid bg-primary text-white text-center">
 
-		 	<article id="bookmark" class="col-lg-4">
-		 		<header>座右銘</header>
-		 		<h3>願你所有的追尋，都能帶你找到平靜</h3>
-		 	</article>
+			<nav>
+				<h1><a href="http://www1.pu.edu.tw/~tcyang" class="text-reset text-decoration-none text-white bg-primary" target="_blank" id="I">張芯榕(Xin-Rong Zhang)</a></h1>
+				<h2><a href="http://www.pu.edu.tw/" class="text-reset text-decoration-none text-white bg-primary" id="PU">靜宜大學</a>	
+				<a href="http://csim.pu.edu.tw/" class="text-reset text-decoration-none text-white bg-primary" id="CSIM">資訊管理學系</a></h2>
+			</nav>
+			
+			<img src="pucsim.jpg" alt="照片" class="img-fluid rounded-circle" id="PICTURE">
+			<br><br><br>
 
-		 	<aside id="youtube" class="col-lg-4">
-		 		<header>推薦影片</header>
-		 		<div class="embed-responsive embed-responsive-16by9">
-		 			<iframe src="https://www.youtube.com/embed/=pW88QFpHXa8" allowfullscreen class="embed-responsive-item">></iframe>
-		 		</div>
-		 	</aside>
-		 </div><br><br>
+			<div class="row">
+				<session id="aboutme" class="col-lg-4">
+					<header>關於我</header>
+					<h3>職稱：靜宜大學資訊管理學系學生</h3>
+					<h3>E-Mail: <a href="s1090343@gm.pu.edu.tw" class="text-reset text-decoration-none text-white bg-info">s1090343@gm.pu.edu.tw</a></h3>
+				</session>
 
-	 	<footer>
-	 		Copyrigth @ 張芯榕. All Rights Reserved.
-	 	</footer>
+				<article id="bookmark" class="col-lg-4">
+					<header>座右銘</header>
+					<h3>願你所有的追尋，都能帶你找到平靜</h3>
+				</article>
 
-	</main>
+				<aside id="experience" class="col-lg-4">
+					<header>課堂心得</header>
+					<h3>第一次使用Bootstrap製作網頁感覺很有趣</h3>
+				</aside>
+			</div><br><br>
 
-</body>
+			<footer>
+				Copyrigth @ 張芯榕. All Rights Reserved.
+			</footer>
+		</main>
+	</body>
 </html>
